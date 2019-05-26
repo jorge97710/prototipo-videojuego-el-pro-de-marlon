@@ -26,7 +26,11 @@ public class HealthScript : MonoBehaviour
         if (characterDied)
             return;
         health -= damage;
-        health_UI.DisplayHealth(health);
+        if (is_Player)
+        {
+            health_UI.DisplayHealth(health);
+        }
+        
         if (health <= 0f)
         {
             animationScript.Death();
@@ -34,7 +38,6 @@ public class HealthScript : MonoBehaviour
             if (is_Player)
             {
                 GameObject.FindWithTag(Tags.ENEMY_TAG).GetComponent<EnemyMovement>().enabled = false;
-
 
             }
             return;
