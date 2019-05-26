@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static EnemyManager instance;
+
+    [SerializeField]
+    private GameObject enemyPrefab;
+
+    float spawnNewEnemyTimer = 1f;
+    
+    void Awake()
     {
+        if (instance == null)
+            instance = this;        
+    }
+    void Update()
+    {
+        spawnNewEnemyTimer -= Time.deltaTime;
+        if (spawnNewEnemyTimer <= 0)
+        {
+            spawnNewEnemyTimer = 10f;
+            SpawnEnemy();
+            spawnNewEnemyTimer -= 1f;
+        }
+
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SpawnEnemy()
     {
-        
+        Instantiate(enemyPrefab, transform.position, Quaternion.identity);
     }
 }
