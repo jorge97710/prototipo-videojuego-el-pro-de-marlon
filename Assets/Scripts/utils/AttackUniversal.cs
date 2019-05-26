@@ -34,8 +34,20 @@ public class AttackUniversal : MonoBehaviour
                     hitFx_Pos.x -= 0.3f;
                 }
                 Instantiate(hit_FX_prefab, hitFx_Pos, Quaternion.identity);
+                if (gameObject.CompareTag(Tags.LEFT_ARM_TAG) || gameObject.CompareTag(Tags.LEFT_LEG_TAG))
+                {
+                    hit[0].GetComponent<HealthScript>().ApplyDamage(damage, true);
+                }
+                else
+                {
+                    hit[0].GetComponent<HealthScript>().ApplyDamage(damage, false);
+                }
             }
-            print("damage " + hit[0].gameObject.name);
+            if (is_Enemy)
+            {
+                hit[0].GetComponent<HealthScript>().ApplyDamage(damage, false);
+            }
+            
             gameObject.SetActive(false);
         }
           

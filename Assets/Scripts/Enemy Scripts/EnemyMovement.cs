@@ -9,7 +9,7 @@ public class EnemyMovement : MonoBehaviour
     public float speed = 5f;
     private Transform playerTarget;
     public float attack_Distance = 1f;
-    private float chase_player_after_attack = 1f;
+    private float chase_player_after_attack = 0.2f;
     private float current_attack_time;
     private float default_attack_time = 2f;
     private bool followPlayer, attackPlayer;

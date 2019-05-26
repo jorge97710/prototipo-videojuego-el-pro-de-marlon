@@ -14,7 +14,7 @@ public class AnimationTags
     public const string ATTACK_2_TRIGGER = "Attack2";
     public const string ATTACK_3_TRIGGER = "Attack3";
     public const string IDLE_ANIMATION = "Idle";
-    public const string KNOCK_DOWN_TRIGGER = "KnockDown";
+    public const string KNOCK_DOWN_TRIGGER = "Knockdown";
     public const string STAND_UP_TRIGGER = "StandUp";
     public const string HIT_TRIGGER = "Hit";
     public const string DEATH_TRIGGER = "Death";
