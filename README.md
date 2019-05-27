@@ -11,7 +11,7 @@ To build and develop on the project you need to have the following prerequisites
 ___
 ### Assets
 
-Asset file has only the meta files and the scripts. You'll need to download the Beat'em up Assets shown in the prerequisites section for this to function properly. 
+Asset directory has only the meta files and scripts used in this build. You'll need to download the Beat'em up Assets shown in the prerequisites section for this to function properly. 
 ___
 ### Engine 
 
