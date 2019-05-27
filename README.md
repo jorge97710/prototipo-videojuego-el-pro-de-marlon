@@ -1,6 +1,6 @@
 # Prototype for a Beat'em up Game
 
-This prototype has the basic mecanics for a beat'em up game. Current version has an enemy spawner that gets faster the longer you play it. There's collision detection for damage to the player or enemy.
+This prototype has the basic mechanics for a beat'em up game. Current version has an enemy spawner that gets faster the longer you play it. There's collision detection for damage to the player or enemy.
 ___
 ### Prerequisites
 
