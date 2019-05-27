@@ -5,9 +5,9 @@ ___
 ### Prerequisites
 
 To build and develope on the project you need to have the following installed/downloaded:
-⋅⋅* Unity Game Engine
-⋅⋅* Visual Studio or MonoDevelop
-⋅⋅* [Beat'em up Game Template 3D](https://assetstore.unity.com/packages/templates/systems/beat-em-up-game-template-3d-98013). This has the game assets. 
+1. Unity Game Engine
+2. Visual Studio or MonoDevelop
+3. [Beat'em up Game Template 3D](https://assetstore.unity.com/packages/templates/systems/beat-em-up-game-template-3d-98013). This has the game assets. 
 ___
 ### Assets
 
